@@ -1,0 +1,22 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    # Processor services
+    Tourze\SymfonyLoggerBundle\Processor\ContextFormatProcessor:
+        tags:
+            - { name: monolog.processor }
+
+    Tourze\SymfonyLoggerBundle\Processor\TokenProcessor:
+        tags:
+            - { name: monolog.processor }
+
+    Tourze\SymfonyLoggerBundle\Processor\WebEventSubscriber:
+        tags:
+            - { name: monolog.processor }
+            - { name: as-coroutine }
+
+    # Service layer
+    Tourze\SymfonyLoggerBundle\Service\ContextFormatterService: ~

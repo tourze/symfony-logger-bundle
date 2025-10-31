@@ -1,0 +1,9 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Tourze\SymfonyLoggerBundle\Processor\:
+    resource: '../../Processor/'
+  Tourze\SymfonyLoggerBundle\Service\:
+    resource: '../../Service/'
