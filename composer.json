@@ -18,7 +18,7 @@
     "symfony/yaml": "^7.3",
     "tourze/arrayable": "1.*",
     "tourze/async-contracts": "0.0.*",
-    "tourze/backtrace-helper": "0.1.*",
+    "tourze/backtrace-helper": "1.*",
     "tourze/bundle-dependency": "1.*",
     "tourze/symfony-dependency-service-loader": "1.*"
   },
