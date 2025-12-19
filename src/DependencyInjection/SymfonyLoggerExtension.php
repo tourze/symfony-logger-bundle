@@ -4,7 +4,7 @@ namespace Tourze\SymfonyLoggerBundle\DependencyInjection;
 
 use Tourze\SymfonyDependencyServiceLoader\AutoExtension;
 
-class SymfonyLoggerExtension extends AutoExtension
+final class SymfonyLoggerExtension extends AutoExtension
 {
     protected function getConfigDir(): string
     {
